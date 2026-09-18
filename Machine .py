@@ -1,14 +1,3 @@
-#####  target classes
-#iris-setosa 
-#iris-versicolor 
-#iris-verginica
-######feartures
-#sepal length in cm
-#sepal width in cm
-#petal length in cm
-#petal width in cm
-print("Hello! Python is working perfectly.")
-print("My machine learning environment is ready!")
 import numpy as np
 
 numbers = np.array([10, 20, 30, 40, 50])
