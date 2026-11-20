@@ -34,9 +34,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "O1WOFeXX1CW0",
-        "outputId": "daadb617-8908-4d2c-a931-1650f5d7e56b"
+        "outputId": "c9fd5170-b942-4830-bf44-1037da8deadc"
       },
-      "execution_count": 3,
+      "execution_count": 1,
       "outputs": [
         {
           "output_type": "stream",
@@ -76,7 +76,7 @@
       "metadata": {
         "id": "c_fFbmBP1CW7"
       },
-      "execution_count": 4,
+      "execution_count": 2,
       "outputs": [],
       "source": [
         "# CELL 2 - FUNCTIONS: load data, indicators, labels, live prediction (nothing prints here)\n",
@@ -181,9 +181,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "E_RItQQx1CXA",
-        "outputId": "6664071d-197e-43e2-9c8a-1b79d9034c22"
+        "outputId": "8aa424a3-d81b-4969-e124-49213a531b84"
       },
-      "execution_count": 5,
+      "execution_count": 3,
       "outputs": [
         {
           "output_type": "stream",
@@ -240,9 +240,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "DYcOGLIl1CXF",
-        "outputId": "73273d23-f6a1-44f7-988f-6454eae38108"
+        "outputId": "2957ba84-ea9b-4369-ce71-cf70c94280f1"
       },
-      "execution_count": 6,
+      "execution_count": 5,
       "outputs": [
         {
           "output_type": "stream",
@@ -290,9 +290,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Ma0J-Q1p1CXH",
-        "outputId": "d2c4d40e-a17a-4d5d-efa1-4875429b0038"
+        "outputId": "f800330e-1e32-4726-c536-14aa58d8f46a"
       },
-      "execution_count": 7,
+      "execution_count": 6,
       "outputs": [
         {
           "output_type": "stream",
@@ -399,9 +399,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "8gTwLuSO4_QL",
-        "outputId": "3d2be4e5-75a1-4ecd-88a4-96482aa93b7a"
+        "outputId": "d584c586-c3b9-43bb-e7b4-edd7f8060b34"
       },
-      "execution_count": 8,
+      "execution_count": 7,
       "outputs": [
         {
           "output_type": "stream",
@@ -433,9 +433,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "SHujTcKD1CXJ",
-        "outputId": "43bb8949-fa82-4ef2-814a-1996e1b75f96"
+        "outputId": "ce03e066-8fc5-4ee6-cabe-7b3bd698a456"
       },
-      "execution_count": 9,
+      "execution_count": 8,
       "outputs": [
         {
           "output_type": "stream",
@@ -468,9 +468,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "l5G087Of1CXL",
-        "outputId": "ae410bda-9a2a-4053-be7d-e5a4a681f05e"
+        "outputId": "57167cc0-b95c-4e26-aa7d-8385ae8e0b6d"
       },
-      "execution_count": 10,
+      "execution_count": 9,
       "outputs": [
         {
           "output_type": "stream",
@@ -533,7 +533,7 @@
       "metadata": {
         "id": "v0CZwSVg1CXN"
       },
-      "execution_count": 11,
+      "execution_count": 10,
       "outputs": [],
       "source": [
         "# CELL 8 - LLM CHECK (Groq first, Gemini as backup). Any problem = veto, never a trade.\n",
@@ -608,7 +608,7 @@
       "metadata": {
         "id": "hOANwfDd1CXP"
       },
-      "execution_count": 12,
+      "execution_count": 11,
       "outputs": [],
       "source": [
         "# CELL 9 - DECISION RULES + TELEGRAM\n",
@@ -657,9 +657,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "39FJt8Is1CXS",
-        "outputId": "b2a3d16f-0727-41be-9d57-7232d6909e7f"
+        "outputId": "b49ed646-a8c1-4b38-9eb5-5ab05f622e05"
       },
-      "execution_count": 13,
+      "execution_count": 12,
       "outputs": [
         {
           "output_type": "stream",
@@ -709,16 +709,16 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "I-CnEItZ1CXT",
-        "outputId": "f5e111e6-b955-4b8a-caf0-c29e916b8ba6"
+        "outputId": "61a5b2d0-b6eb-4531-9ba4-f97cfa0113c3"
       },
-      "execution_count": 14,
+      "execution_count": 13,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
             "bars where the model wanted a clear trade (0.40+ confidence): 47\n",
-            "2026-11-11 11:00:00 -> SELL {'signal': 'SELL', 'confidence': 0.533, 'probs': [0.369, 0.097, 0.533], 'note': 'groq: agree=True risk=MEDIUM - Price below SMA50, negative returns, RSI low support sell; MACD histogram positive creates mixed signal, medium risk.'}\n",
+            "2026-11-11 11:00:00 -> SELL {'signal': 'SELL', 'confidence': 0.533, 'probs': [0.369, 0.097, 0.533], 'note': 'groq: agree=True risk=MEDIUM - Recent candles show slight downtrend; RSI falling below 50, price below SMA20, but MACD_hist still positive—moderate risk.'}\n",
             "Telegram: sent\n"
           ]
         }
@@ -744,6 +744,17 @@
         "else:\n",
         "    print(\"no such bar in the last 2000; this is fine, it just means the model is very cautious\")"
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pip install -q trafilatura feedparser\n"
+      ],
+      "metadata": {
+        "id": "qXCMPbj3uVlT"
+      },
+      "execution_count": 14,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -798,9 +809,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "ZWqWby9U-plZ",
-        "outputId": "2e96ba7b-c350-4740-bb1d-2784bcbc558b"
+        "outputId": "707f6912-23e1-4c5d-8386-340697a7b9a9"
       },
-      "execution_count": 25,
+      "execution_count": 15,
       "outputs": [
         {
           "output_type": "stream",
@@ -823,7 +834,7 @@
       "metadata": {
         "id": "yyV3vZ8FtbuB"
       },
-      "execution_count": 1,
+      "execution_count": 16,
       "outputs": []
     },
     {
@@ -899,9 +910,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "pBnH5M4ZsUFf",
-        "outputId": "2df77b65-f6c3-41f9-9b6f-3af853a6d46a"
+        "outputId": "0de91f3e-a762-44d9-d02f-82da2cf35dfd"
       },
-      "execution_count": 22,
+      "execution_count": 17,
       "outputs": [
         {
           "output_type": "stream",
@@ -911,12 +922,12 @@
             "  25 entries\n",
             "\n",
             "✅ Cell 13 done: 25 articles (deduped, body > 100 chars)\n",
-            "           published_at_utc     source                                                                                                           title\n",
-            "0 2026-11-19 19:23:12+00:00  forexlive                                                  Canada seeks interim U.S. tariff deal by year-end, CBC reports\n",
-            "1 2026-11-19 18:39:20+00:00  forexlive  Trump weighs another strike on Iran as Hormuz shipping risks mount. Returns to Washington after overseas trip.\n",
-            "2 2026-11-19 16:53:58+00:00  forexlive              Poland's Tusk: It doesn't look probable that Russia will be ready to negotiate peace before spring\n",
-            "3 2026-11-19 13:33:03+00:00  forexlive                                                  Canada October producer price index +12.6% vs +14.5% y/y prior\n",
-            "4 2026-11-19 13:30:09+00:00  forexlive                                                                 US initial jobless claims 203K vs 197K estimate\n"
+            "           published_at_utc     source                                                                                              title\n",
+            "0 2026-11-20 07:40:50+00:00  forexlive                                                                What are the main events for today?\n",
+            "1 2026-11-20 07:00:37+00:00  forexlive                                                UK October retail sales +0.7% vs +0.0% m/m expected\n",
+            "2 2026-11-20 04:39:38+00:00  forexlive                     investingLive Asia-Pacific market news: Red Friday as Asia’s AI trade unravels\n",
+            "3 2026-11-20 02:14:13+00:00  forexlive                    US envoys float NATO membership for Ukraine in exchange for Donbas, WSJ reports\n",
+            "4 2026-11-20 01:16:31+00:00  forexlive  US approved nearly 900,000 Nvidia and AMD AI chips for China. Raises more questions than answers.\n"
           ]
         }
       ]
@@ -1009,49 +1020,49 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "r4liwTuxG14z",
-        "outputId": "114af1a3-ce73-4af3-ee9a-6fb31c14439c"
+        "outputId": "d8ccfa6d-a9a6-4602-dc9d-c4eb51b7b82a"
       },
-      "execution_count": 36,
+      "execution_count": 19,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            " 2026-05-24 → 2026-05-31: 16 articles\n",
+            " 2026-05-24 → 2026-05-31: 6 articles\n",
             " 2026-05-31 → 2026-06-07: 8 articles\n",
             " 2026-06-07 → 2026-06-14: 10 articles\n",
             " 2026-06-14 → 2026-06-21: 4 articles\n",
             " 2026-06-21 → 2026-06-28: 7 articles\n",
             " 2026-06-28 → 2026-07-05: 11 articles\n",
-            " 2026-07-05 → 2026-07-12: 6 articles\n",
-            " 2026-07-12 → 2026-07-19: 8 articles\n",
+            " 2026-07-05 → 2026-07-12: 7 articles\n",
+            " 2026-07-12 → 2026-07-19: 9 articles\n",
             " 2026-07-19 → 2026-07-26: 6 articles\n",
             " 2026-07-26 → 2026-08-02: 8 articles\n",
             " 2026-08-02 → 2026-08-09: 10 articles\n",
-            " 2026-08-09 → 2026-08-16: 6 articles\n",
+            " 2026-08-09 → 2026-08-16: 7 articles\n",
             " 2026-08-16 → 2026-08-23: 10 articles\n",
-            " 2026-08-23 → 2026-08-30: 5 articles\n",
+            " 2026-08-23 → 2026-08-30: 4 articles\n",
             " 2026-08-30 → 2026-09-06: 8 articles\n",
-            " 2026-09-06 → 2026-09-13: 5 articles\n",
+            " 2026-09-06 → 2026-09-13: 4 articles\n",
             " 2026-09-13 → 2026-09-20: 2 articles\n",
             " 2026-09-20 → 2026-09-27: 24 articles\n",
-            " 2026-09-27 → 2026-10-04: 18 articles\n",
-            " 2026-10-04 → 2026-10-11: 36 articles\n",
-            " 2026-10-11 → 2026-10-18: 18 articles\n",
-            " 2026-10-18 → 2026-10-25: 11 articles\n",
+            " 2026-09-27 → 2026-10-04: 19 articles\n",
+            " 2026-10-04 → 2026-10-11: 34 articles\n",
+            " 2026-10-11 → 2026-10-18: 17 articles\n",
+            " 2026-10-18 → 2026-10-25: 10 articles\n",
             " 2026-10-25 → 2026-11-01: 15 articles\n",
-            " 2026-11-01 → 2026-11-08: 100 articles Truncated (100)\n",
-            " 2026-11-08 → 2026-11-15: 23 articles\n",
+            " 2026-11-01 → 2026-11-08: 16 articles\n",
+            " 2026-11-08 → 2026-11-15: 25 articles\n",
             " 2026-11-15 → 2026-11-20: 100 articles Truncated (100)\n",
             "\n",
-            "✅ Fetching data done: +466 from Google News, total news_df = 551\n",
-            "   date range: 2026-05-24 07:00:00+00:00 → 2026-11-19 22:58:55+00:00\n",
-            "           published_at_utc                                                                                                           title\n",
-            "0 2026-11-19 19:23:12+00:00                                                  Canada seeks interim U.S. tariff deal by year-end, CBC reports\n",
-            "1 2026-11-19 18:39:20+00:00  Trump weighs another strike on Iran as Hormuz shipping risks mount. Returns to Washington after overseas trip.\n",
-            "2 2026-11-19 16:53:58+00:00              Poland's Tusk: It doesn't look probable that Russia will be ready to negotiate peace before spring\n",
-            "3 2026-11-19 13:33:03+00:00                                                  Canada October producer price index +12.6% vs +14.5% y/y prior\n",
-            "4 2026-11-19 13:30:09+00:00                                                                 US initial jobless claims 203K vs 197K estimate\n"
+            "✅ Fetching data done: +371 from Google News, total news_df = 396\n",
+            "   date range: 2026-05-24 07:00:00+00:00 → 2026-11-20 07:40:50+00:00\n",
+            "           published_at_utc                                                                                              title\n",
+            "0 2026-11-20 07:40:50+00:00                                                                What are the main events for today?\n",
+            "1 2026-11-20 07:00:37+00:00                                                UK October retail sales +0.7% vs +0.0% m/m expected\n",
+            "2 2026-11-20 04:39:38+00:00                     investingLive Asia-Pacific market news: Red Friday as Asia’s AI trade unravels\n",
+            "3 2026-11-20 02:14:13+00:00                    US envoys float NATO membership for Ukraine in exchange for Donbas, WSJ reports\n",
+            "4 2026-11-20 01:16:31+00:00  US approved nearly 900,000 Nvidia and AMD AI chips for China. Raises more questions than answers.\n"
           ]
         }
       ]
@@ -1102,21 +1113,21 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "TaJKGjbaRfDw",
-        "outputId": "94ea7324-8499-4abd-f19b-607dea05cb51"
+        "outputId": "0cd690a0-2686-4aad-e475-97d9414f2f4c"
       },
-      "execution_count": 37,
+      "execution_count": 20,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
             "  2026-11-01 → 2026-11-04: 11 articles\n",
-            "  2026-11-04 → 2026-11-07: 11 articles\n",
+            "  2026-11-04 → 2026-11-07: 12 articles\n",
             "  2026-11-07 → 2026-11-08: 9 articles\n",
-            "  2026-11-15 → 2026-11-18: 89 articles\n",
-            "  2026-11-18 → 2026-11-20: 64 articles\n",
+            "  2026-11-15 → 2026-11-18: 85 articles\n",
+            "  2026-11-18 → 2026-11-20: 73 articles\n",
             "\n",
-            "✅ Cell 13c done: +178, total news_df = 614\n"
+            "✅ Refetching done: +185, total news_df = 497\n"
           ]
         }
       ]
@@ -1149,19 +1160,19 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "39Ks-LEmSWbx",
-        "outputId": "7fdb96f3-5b87-49dc-aed0-a0079f132fa2"
+        "outputId": "48c1a706-0f75-4a63-dde3-c13a6595c07c"
       },
-      "execution_count": 39,
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Total: 614\n",
-            "Unique URLs: 614\n",
-            "Unique titles (exact): 588\n",
-            "Unique title-prefixes: 564\n",
-            "Body length: min=252, median=461, max=4000\n"
+            "Total: 497\n",
+            "Unique URLs: 497\n",
+            "Unique titles (exact): 475\n",
+            "Unique title-prefixes: 456\n",
+            "Body length: min=267, median=476, max=4000\n"
           ]
         }
       ]
@@ -1184,24 +1195,25 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "AhPQqrVSvunD",
-        "outputId": "d6c002ec-a562-4a99-cb5a-5ddaabfbea8d"
+        "outputId": "c869a662-5463-4e11-93f3-b398251592ce"
       },
-      "execution_count": 23,
+      "execution_count": 22,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Rows: 25\n",
-            "Unique URLs: 25\n",
-            "Body length: min=593, median=2909, max=4000\n",
+            "Rows: 497\n",
+            "Unique URLs: 497\n",
+            "Body length: min=267, median=476, max=4000\n",
             "\n",
             "Sample body (first 400 chars of row 0):\n",
             "\n",
-            "Canada seeks interim U.S. tariff deal by year-end, CBC reports\n",
+            "What are the main events for today?\n",
             "Summary\n",
-            "- Negotiators are seeking relief for steel, aluminum, autos and lumber, as well as other Canadian goods hit by U.S. tariffs in August.\n",
-            "CBC News reported, citing sources familiar with Thursday’s meeting between Canada-U.S. Trade Minister Dominic LeBlanc and the federal government’s Canada-U.S. economic advisory committee, that O\n"
+            "- We don't have much on the agenda today as the focus will remain on growth concerns and US-Iran developments\n",
+            "EUROPEAN SESSION\n",
+            "In the European session, the main highlight was the UK Retail Sales report. The data showed a strong rebound in October, beating expectations across both headline and underlying measures, with volumes rising 0.7% m/m and sales ex\n"
           ]
         }
       ]
@@ -1262,11 +1274,11 @@
         "                model=NEWS_LLM_MODEL,\n",
         "                messages=[\n",
         "                    {\"role\": \"system\", \"content\": NEWS_SYSTEM},\n",
-        "                    {\"role\": \"user\",   \"content\": text},\n",
+        "                    {\"role\": \"user\",   \"content\": text + \"\\n\\nRespond with JSON only\"},\n",
         "                ],\n",
         "                temperature=0,\n",
-        "                response_format={\"type\": \"json_object\"},\n",
-        "                max_tokens=250,\n",
+        "\n",
+        "                max_tokens=500,\n",
         "            )\n",
         "            return parse_news_json(r.choices[0].message.content)\n",
         "        except Exception as e:\n",
@@ -1303,7 +1315,7 @@
         "        results.append(None)\n",
         "    if (i + 1) % 20 == 0:\n",
         "        print(f\"  classified {i+1}/{len(news_df)}\")\n",
-        "    time.sleep(1.5)   # <-- throttle: ~40 req/min, under Groq free-tier limit\n",
+        "    time.sleep(2.5)   # <-- throttle: ~40 req/min, under Groq free-tier limit\n",
         "    if (i + 1) % 50 == 0:\n",
         "      with open(NEWS_CACHE_PATH, \"w\") as f:\n",
         "        json.dump(cache, f)\n",
@@ -1323,356 +1335,65 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Tug8QNdMdQmQ",
-        "outputId": "24b67fef-78e7-4fdc-fc35-e5214fb167ca"
+        "outputId": "7a2f5344-55cb-4c62-9187-d8431ac6859b"
       },
       "execution_count": null,
       "outputs": [
         {
-          "output_type": "stream",
+          "metadata": {
+            "tags": null
+          },
           "name": "stdout",
+          "output_type": "stream",
           "text": [
-            "Loaded 25 cached classifications\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiowFBVV95cUxPMGRTNkV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixwFBVV95cUxQWDNwa3d: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxNRVBNbEV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi4gFBVV95cUxOdE44N1N: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirwFBVV95cUxOUmlxS0J: BadRequestError\n",
-            "  classified 40/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxOXzVpQkV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxNMUhucGd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxQN2F0UGJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxQQUJuUDc: BadRequestError\n",
-            " cache saved at 50 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiugFBVV95cUxNNDJPbk5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxOWkk2Tjd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxNemdkbkl: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxQQzkxQlV: BadRequestError\n",
-            "  classified 60/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi2AFBVV95cUxNU09YME1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV0tSZXV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTWVrWG1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxQT0UxOXV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxOR3Q1RDd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxNMmpsLVp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxOdTNRZ1R: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxNZjNZc2J: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTU5Hel9: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMihwFBVV95cUxPU0pCVkV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxPZndPcUp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxOYWhRamp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMickFVX3lxTFBkd3lfNHl: BadRequestError\n",
-            "  classified 80/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiekFVX3lxTE9MWVk2RjV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSmRya3h: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYTlzQ1J: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1gFBVV95cUxOR0laWXF: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxOTlNfTl9: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxNMkpEa3R: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiaEFVX3lxTE1lZ3BveHl: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxQOUw1cWF: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUxRODN: BadRequestError\n",
-            "  classified 100/614\n",
-            " cache saved at 100 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxQaWZTUkl: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQVF1Wmo: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxObHlYdXQ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxObzdFTC1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxQSnNaZUN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxOMVl0bkN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivwFBVV95cUxQRXVEb2o: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWlVMY3h: BadRequestError\n",
-            "  classified 120/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMieEFVX3lxTE51NjhfenZ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxQQXBNVXN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxQY2FXbDV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbDdqak5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMifEFVX3lxTE9hUnlVUGx: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMihAJBVV95cUxQcDhjZ0J: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLVM2cm5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxNd2w0T2l: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxQeGcxdzd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxPal9feVY: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxPOE5oSXN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRlMxbVJ: BadRequestError\n",
-            "  classified 140/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxOZkllT2c: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxQaVhpVUx: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVMwVW1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxQc2dJeTN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxQOFFsVkJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipAFBVV95cUxNVjhtVGZ: BadRequestError\n",
-            " cache saved at 150 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxPcy02SE5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxOcjh3VF8: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdEpIdkx: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikwFBVV95cUxPRnBXQjN: BadRequestError\n",
-            "  classified 160/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxOVWthalV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxOb3JXdXo: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijwFBVV95cUxNRE9yMlR: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivwFBVV95cUxPYWJxNWd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxNUktWUkp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijwFBVV95cUxPdXk5Sjd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxQeV85Z3h: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxOZEhtTTU: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxQeXRhZFd: BadRequestError\n",
-            "  classified 180/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinAFBVV95cUxPSnotb2N: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxNaVIzRTh: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQlFrN0J: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRCUXl: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivAFBVV95cUxNQndEOG0: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0gFBVV95cUxPX3FVMXB: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxOa0RlTFd: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkdfYkV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMie0FVX3lxTE0teFJjNFV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZWNJekV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxQTEZXZE1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxOdXJCZmZ: BadRequestError\n",
-            "  classified 200/614\n",
-            " cache saved at 200 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivwFBVV95cUxOUFV3Sk1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVTZ6SWV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxQdGl4aFN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiywFBVV95cUxOSFJ0OHF: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimgFBVV95cUxQYzh3UkR: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwgFBVV95cUxOU3ExVE1: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxQR015Y24: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizgFBVV95cUxOUS1JNkh: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxOaTlRMlR: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxNZXhLdy1: BadRequestError\n",
-            "  classified 220/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxNUEV0SG5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxPV3RDOEV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxNZGt1SXB: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxOQ05GM2t: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ1MwQWs: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxNY1lTMDN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxOODM2cjF: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxNOWN6ZUR: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQUo2dEU: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMigwFBVV95cUxONzR4R3l: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxPdkZNTTh: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxNSS1KbFA: BadRequestError\n",
-            "  classified 240/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinAFBVV95cUxNOVZiTE5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxQRlpHYzB: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiygFBVV95cUxPRmNlWFU: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxPNFMyVEl: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb2tKMkx: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZVVBMVN: BadRequestError\n",
-            " cache saved at 250 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirwFBVV95cUxPVGp3WlB: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxNUUtxaDJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLU54WVl: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiowFBVV95cUxNdTBseUJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxNbERoSGJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizwFBVV95cUxQR3ZwT2t: BadRequestError\n",
-            "  classified 260/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxObVFnaE5: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxNVm9GOFg: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeXVyOXk: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxPR3pRbEF: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxOR0pndkJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMl84aW9: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivAFBVV95cUxOZjRERnZ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizAFBVV95cUxPc2ZpcHp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxQalhFTTR: BadRequestError\n",
-            "  classified 280/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxPUjJMeGs: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS0Rndnp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbmVHWTk: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxPQkVrbzU: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijAFBVV95cUxNZlNabmx: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxNRUotMDV: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMif0FVX3lxTE5VNkJMUFJ: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimgFBVV95cUxQSjRkN3p: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRFRScnB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxOR2FGVkp: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1AFBVV95cUxORU1oa0J: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiswFBVV95cUxPNms2ajU: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxNUjA0N2Y: RateLimitError\n",
-            "  classified 300/614\n",
-            " cache saved at 300 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxNLXlna2N: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxOZUgyMEN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirwFBVV95cUxQeEE1Y2Z: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxQWE9hUzN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxQQVVXVjJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQ3hTVVd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxOX2Z5YVF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxPSjdhemR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0gFBVV95cUxQV0M2d1J: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxOSDNubXB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxQVGdNeGd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiswFBVV95cUxQM3B1RXZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMUZtMkU: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaHZqdlJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxNQS1feWM: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGFUQnp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxNRklFVHM: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi9AFBVV95cUxOYVRqWWF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxNYkhSYVh: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxOOThMU1J: RateLimitError\n",
-            "  classified 320/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiSkFVX3lxTFBiWGVUWXJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizwFBVV95cUxPMjNUODN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWWlBLVR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxNRVY0SGl: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxQRXUtRzR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMilAFBVV95cUxNTy05U2U: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeU4zV0U: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxObTFpVl9: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxQOWE4MTB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizgFBVV95cUxNSlRTclM: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxQbE1DeUp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinAFBVV95cUxQSmF6eVp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiygFBVV95cUxOUURvaU5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxOODlyRV9: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxQbE0zLTZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizwFBVV95cUxQUkZNTFp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxNWFY3aDR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixAFBVV95cUxONWRDekN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxNRl9ERXd: RateLimitError\n",
-            "  classified 340/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirwFBVV95cUxPVEF0c1R: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMie0FVX3lxTFBoUHhnbWJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMilgFBVV95cUxOM0hfeVF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxOcnQwbm5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxNR1Q3cTQ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxQTWoxNGF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMihAFBVV95cUxPdjNQdmh: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikwFBVV95cUxObzg4N0t: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimgFBVV95cUxPMy1xM0R: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxOaVBWOUh: RateLimitError\n",
-            " cache saved at 350 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxNdkg1RW1: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1gFBVV95cUxNb1BLN0I: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVGdPQkV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYnc4dDV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMibkFVX3lxTE9IcWlJYXB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVJ2TGd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxNLUJjWG1: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiowFBVV95cUxOUzN3cXB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOGp5eml: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVlkTjB: RateLimitError\n",
-            "  classified 360/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxQOWJGNWd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxPaFhXT1c: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipAFBVV95cUxNS0RfR21: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxPc05YSlF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxQRzJIN0R: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ0tGTVJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinAFBVV95cUxNakdhaTk: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinAFBVV95cUxPNHJjWjV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinAFBVV95cUxNYmZRQkp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxOS3AwNUF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxON0RmVkg: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMilwFBVV95cUxOYzF6V2J: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimgFBVV95cUxNczdqN3h: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMilwFBVV95cUxQZG5xTGN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMilwFBVV95cUxPYjFEMmF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuwFBVV95cUxOR25wQnU: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiswFBVV95cUxNQUFlY0R: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLWZTLVJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxQWE5XcUV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxQTGNKaWV: RateLimitError\n",
-            "  classified 380/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUnk0dFV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ2ZVeGN: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRlRxLXF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbnMzN3U: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSW9WcEx: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2c5Rm1: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxNT0RZYzF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMWxaY2x: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirwFBVV95cUxNSW9LRjF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxPeWhiVDl: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQUlBckE: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxPZF93ZDd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiowFBVV95cUxPRGd0bFJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxQYXZEdnZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiyAFBVV95cUxOT0V5VTZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxPUkw3MUN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxQZzZ6TDV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdFo1RUx: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ1QwRy1: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxPWHVIX1F: RateLimitError\n",
-            "  classified 400/614\n",
-            " cache saved at 400 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWFJob1p: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSHdoVTB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxPMnI5MHo: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMieEFVX3lxTE5VbW04SkN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxPcUFKSkF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiugFBVV95cUxQMnI0bjV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRFNXRS0: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxPX3JuVVp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizwFBVV95cUxPblBoQmV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMicEFVX3lxTE1aZ21MdGI: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiigFBVV95cUxPeFA3cEl: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiigFBVV95cUxPd0FlenZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMie0FVX3lxTFBXc2R5V29: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiO0FVX3lxTE5XRzBJc3Z: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMingFBVV95cUxNSTBRUWF: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZEZsZlg: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmZlR3V: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM3hjenB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxOcU9ySU9: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivAFBVV95cUxQUkhYcFd: RateLimitError\n",
-            "  classified 420/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxQZjR6WG9: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxObU5jclE: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxNRmVRbm9: BadRequestError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMigwFBVV95cUxPMU5XZUd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi-wFBVV95cUxQRWs5LWZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMizAFBVV95cUxPbm1OWnh: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxQZnVVRzN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixwFBVV95cUxOdXN4UHN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWER4Rmh: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiygFBVV95cUxOd0dfRG5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi6gFBVV95cUxPajV5alB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiggFBVV95cUxQTkFxWmd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxQTjFlUWJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivwFBVV95cUxQdkI0M2l: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipAFBVV95cUxPMmRneWN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMigwFBVV95cUxOOVp4N0J: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxPTkp4cEJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMigwFBVV95cUxPQWppbUR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxNc0FiTXN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSXQ5N2t: RateLimitError\n",
-            "  classified 440/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxPc1JQQVV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiUEFVX3lxTE12TWRHMjR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiswFBVV95cUxNdFBaTm5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMic0FVX3lxTE5Pd2d5QnN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxQM0U4Sll: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxOb0NnRmR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMihwFBVV95cUxOclpscXI: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi0gFBVV95cUxNY3ZoRjl: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxORUdueFp: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbF9Qdkl: RateLimitError\n",
-            " cache saved at 450 / 614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxNXzZET29: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxNc2xhUGV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMic0FVX3lxTE5VYmQyNDR: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxNZlNaSl8: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYkRkazd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVEEwVTI: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxQYzBUVlh: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxPVG1MUk9: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVWlmekh: RateLimitError\n",
-            "  classified 460/614\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiUEFVX3lxTFBCcThBeW5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirAFBVV95cUxPS1E1M3l: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxPdWdRdjB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxONkMtT1p: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMimgFBVV95cUxNYlpwSVA: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxNa0lWdld: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUlp5MHl: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMinwFBVV95cUxPdzJLTDZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcHAtTTZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVlBBRVh: RateLimitError\n"
+            "Loaded 178 cached classifications\n",
+            "  classified 60/497\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQVF1Wmo: RateLimitError\n",
+            "  classified 80/497\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxObHlYdXQ: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxObzdFTC1: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxQSnNaZUN: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMivwFBVV95cUxQRXVEb2o: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWlVMY3h: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxQQXBNVXN: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMieEFVX3lxTE51NjhfenZ: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxQY2FXbDV: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbDdqak5: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMifEFVX3lxTE9hUnlVUGx: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMihAJBVV95cUxQcDhjZ0J: RateLimitError\n",
+            "  classified 100/497\n",
+            " cache saved at 100 / 497\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLVM2cm5: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxNd2w0T2l: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxQeGcxdzd: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxPal9feVY: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxPOE5oSXN: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRlMxbVJ: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxOZkllT2c: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxNYjNMUlB: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxQaVhpVUx: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVMwVW1: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxQc2dJeTN: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxQOFFsVkJ: RateLimitError\n",
+            "  classified 120/497\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMipAFBVV95cUxNVjhtVGZ: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxPcy02SE5: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxOcjh3VF8: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdEpIdkx: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMikwFBVV95cUxPRnBXQjN: RateLimitError\n",
+            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxOVWthalV: RateLimitError\n"
+          ]
+        },
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stderr",
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "KeyboardInterrupt\n",
+            "\n"
           ]
         }
       ]
@@ -1685,23 +1406,10 @@
         "print(\"News range:   \", news_scored[\"published_at_utc\"].min(), \"→\", news_scored[\"published_at_utc\"].max())"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "MfA-2rd6zdiD",
-        "outputId": "a31ad21d-fbc0-493d-98cb-bf1a0273d6df"
+        "id": "MfA-2rd6zdiD"
       },
-      "execution_count": 28,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Candles range: 2018-11-01 11:00:00 → 2026-11-19 13:00:00\n",
-            "News range:    2026-11-18 00:15:53+00:00 → 2026-11-19 19:23:12+00:00\n"
-          ]
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "cell_type": "code",
