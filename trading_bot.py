@@ -11,10 +11,8 @@
     },
     "colab": {
       "provenance": [],
-      "gpuType": "T4",
       "include_colab_link": true
-    },
-    "accelerator": "GPU"
+    }
   },
   "cells": [
     {
@@ -34,7 +32,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "O1WOFeXX1CW0",
-        "outputId": "c9fd5170-b942-4830-bf44-1037da8deadc"
+        "outputId": "d9ab445e-915b-4d42-b786-172726a89314"
       },
       "execution_count": 1,
       "outputs": [
@@ -42,7 +40,7 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n"
+            "Mounted at /content/drive\n"
           ]
         }
       ],
@@ -181,7 +179,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "E_RItQQx1CXA",
-        "outputId": "8aa424a3-d81b-4969-e124-49213a531b84"
+        "outputId": "3a84ae44-d076-4726-de88-21bae922da35"
       },
       "execution_count": 3,
       "outputs": [
@@ -240,9 +238,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "DYcOGLIl1CXF",
-        "outputId": "2957ba84-ea9b-4369-ce71-cf70c94280f1"
+        "outputId": "16e282d2-083b-4a67-9d5b-ce192ccf60f0"
       },
-      "execution_count": 5,
+      "execution_count": 4,
       "outputs": [
         {
           "output_type": "stream",
@@ -290,9 +288,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "Ma0J-Q1p1CXH",
-        "outputId": "f800330e-1e32-4726-c536-14aa58d8f46a"
+        "outputId": "d3aadf48-303d-45d0-cf54-2715dbf95fe0"
       },
-      "execution_count": 6,
+      "execution_count": 5,
       "outputs": [
         {
           "output_type": "stream",
@@ -399,9 +397,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "8gTwLuSO4_QL",
-        "outputId": "d584c586-c3b9-43bb-e7b4-edd7f8060b34"
+        "outputId": "db47de6b-5ea8-4881-c335-b4cc1e8ca65f"
       },
-      "execution_count": 7,
+      "execution_count": 6,
       "outputs": [
         {
           "output_type": "stream",
@@ -433,9 +431,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "SHujTcKD1CXJ",
-        "outputId": "ce03e066-8fc5-4ee6-cabe-7b3bd698a456"
+        "outputId": "6289d332-6038-404d-b823-26efa53a7aa3"
       },
-      "execution_count": 8,
+      "execution_count": 7,
       "outputs": [
         {
           "output_type": "stream",
@@ -468,9 +466,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "l5G087Of1CXL",
-        "outputId": "57167cc0-b95c-4e26-aa7d-8385ae8e0b6d"
+        "outputId": "4954a75d-cf27-4c14-f426-9979026818b0"
       },
-      "execution_count": 9,
+      "execution_count": 8,
       "outputs": [
         {
           "output_type": "stream",
@@ -533,7 +531,7 @@
       "metadata": {
         "id": "v0CZwSVg1CXN"
       },
-      "execution_count": 10,
+      "execution_count": 9,
       "outputs": [],
       "source": [
         "# CELL 8 - LLM CHECK (Groq first, Gemini as backup). Any problem = veto, never a trade.\n",
@@ -608,7 +606,7 @@
       "metadata": {
         "id": "hOANwfDd1CXP"
       },
-      "execution_count": 11,
+      "execution_count": 10,
       "outputs": [],
       "source": [
         "# CELL 9 - DECISION RULES + TELEGRAM\n",
@@ -657,9 +655,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "39FJt8Is1CXS",
-        "outputId": "b49ed646-a8c1-4b38-9eb5-5ab05f622e05"
+        "outputId": "eede786b-1199-488d-a178-5f475e85bb55"
       },
-      "execution_count": 12,
+      "execution_count": 11,
       "outputs": [
         {
           "output_type": "stream",
@@ -709,16 +707,16 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "I-CnEItZ1CXT",
-        "outputId": "61a5b2d0-b6eb-4531-9ba4-f97cfa0113c3"
+        "outputId": "dc3c78d8-b92f-4e19-d024-9b1d799b98f9"
       },
-      "execution_count": 13,
+      "execution_count": 12,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
             "bars where the model wanted a clear trade (0.40+ confidence): 47\n",
-            "2026-11-11 11:00:00 -> SELL {'signal': 'SELL', 'confidence': 0.533, 'probs': [0.369, 0.097, 0.533], 'note': 'groq: agree=True risk=MEDIUM - Recent candles show slight downtrend; RSI falling below 50, price below SMA20, but MACD_hist still positive—moderate risk.'}\n",
+            "2026-11-11 11:00:00 -> SELL {'signal': 'SELL', 'confidence': 0.533, 'probs': [0.369, 0.097, 0.533], 'note': 'groq: agree=True risk=MEDIUM - Short-term returns negative, RSI falling, SMA20 turned negative, slight downtrend; no strong bullish signals, risk medium.'}\n",
             "Telegram: sent\n"
           ]
         }
@@ -753,7 +751,7 @@
       "metadata": {
         "id": "qXCMPbj3uVlT"
       },
-      "execution_count": 14,
+      "execution_count": 13,
       "outputs": []
     },
     {
@@ -762,6 +760,7 @@
         "# ============================================================\n",
         "# CELL 12 — NEWS CONFIG + LLM CLIENT (Groq / Llama 3.1 8B)\n",
         "# ============================================================\n",
+        "from openai import OpenAI\n",
         "\n",
         "import feedparser\n",
         "import trafilatura\n",
@@ -798,6 +797,14 @@
         "missing = [n for n in (\"CLASS_NAMES\",) if n not in globals()]\n",
         "assert not missing, f\"Run Cell 1 first. Missing: {missing}\"\n",
         "\n",
+        " #Gemini integration\n",
+        "gemini_llm = OpenAI(\n",
+        "     api_key  = GEMINI_API_KEY,\n",
+        "     base_url = \"https://generativelanguage.googleapis.com/v1beta/openai/\"\n",
+        ")\n",
+        "GEMINI_NEWS_MODEL = \"gemini-3.5-flash-lite\"\n",
+        "\n",
+        "\n",
         "print(\"✅ Cell 12 ready\")\n",
         "print(f\"   RSS feeds: {len(RSS_FEEDS)} (full)\")\n",
         "print(f\"   LLM model: {NEWS_LLM_MODEL} (Groq free tier)\")\n",
@@ -809,7 +816,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "ZWqWby9U-plZ",
-        "outputId": "707f6912-23e1-4c5d-8386-340697a7b9a9"
+        "outputId": "098c890c-d895-4594-8754-46eeb1035dcf"
       },
       "execution_count": 15,
       "outputs": [
@@ -910,7 +917,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "pBnH5M4ZsUFf",
-        "outputId": "0de91f3e-a762-44d9-d02f-82da2cf35dfd"
+        "outputId": "fc54bfc4-285c-46ad-b342-1a14ae004316"
       },
       "execution_count": 17,
       "outputs": [
@@ -918,16 +925,48 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Fetching forexlive ...\n",
+            "Fetching forexlive ...\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/european-stocks-end-a-bruising-week-german-dax-falls-7-29/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/trump-secured-two-new-trade-deals-10-others-coming-very-soon/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/bessent-says-trump-and-xi-saw-robust-discussion-on-trade-policy-ai/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/university-of-michigan-consumer-sentiment-51-5-versus-51-5-estimate/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/greer-says-us-china-trade-truce-extension-hinges-on-rare-earths/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/canada-retail-sales-comes-in-stronger-at-0-8-vs-0-7-estimate-core-up-1-0-vs-0-7-estimate/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/investinglive-european-news-wrap-stock-markets-remain-under-pressure-bonds-rally-on-slowdown-expectations/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/what-are-the-main-events-for-today-90/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/uk-october-retail-sales-0-7-vs-0-0-m-m-expected/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/investinglive-asia-pacific-market-news-red-friday-as-asia-s-ai-trade-unravels/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/us-envoys-float-nato-membership-for-ukraine-in-exchange-for-donbas-wsj-reports/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/us-approved-nearly-900-000-nvidia-and-amd-ai-chips-for-china-raises-more-questions-than-answers/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/japan-inflation-picks-up-but-misses-forecasts-as-core-core-slows-to-2-2/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/investinglive-americas-fx-news-wrap-19-nov-inflation-worries-sink-stocks/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/canada-seeks-interim-u-s-tariff-deal-by-year-end-cbc-reports/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/trump-weighs-another-strike-on-iran-as-hormuz-shipping-risks-mount-returns-to-washington-after-overseas-trip/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/poland-s-tusk-it-doesn-t-look-probable-that-russia-will-be-ready-to-negotiate-peace-before-spring/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/canada-october-producer-price-index-12-6-vs-14-5-y-y-prior/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/us-initial-jobless-claims-203k-vs-197k-estimate/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/us-november-philly-fed-vs-20-0-expected/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/investinglive-european-news-wrap-us-stocks-recover-amid-anthropic-enthusiasm/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/what-are-the-main-events-for-today-89/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/investinglive-asia-pacific-market-news-oil-holds-near-92-as-gulf-attacks-mount/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/australian-unemployment-rate-jumps-to-4-9-in-october-against-4-7-expected/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n",
+            "ERROR:trafilatura.downloads:download error: https://investinglive.com/news/moody-s-keeps-us-rating-at-aa1-as-the-economy-beats-forecasts-seeing-2-3-growth-this-year/ Retry.__init__() got an unexpected keyword argument 'retry_after_max'\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
             "  25 entries\n",
             "\n",
-            "✅ Cell 13 done: 25 articles (deduped, body > 100 chars)\n",
-            "           published_at_utc     source                                                                                              title\n",
-            "0 2026-11-20 07:40:50+00:00  forexlive                                                                What are the main events for today?\n",
-            "1 2026-11-20 07:00:37+00:00  forexlive                                                UK October retail sales +0.7% vs +0.0% m/m expected\n",
-            "2 2026-11-20 04:39:38+00:00  forexlive                     investingLive Asia-Pacific market news: Red Friday as Asia’s AI trade unravels\n",
-            "3 2026-11-20 02:14:13+00:00  forexlive                    US envoys float NATO membership for Ukraine in exchange for Donbas, WSJ reports\n",
-            "4 2026-11-20 01:16:31+00:00  forexlive  US approved nearly 900,000 Nvidia and AMD AI chips for China. Raises more questions than answers.\n"
+            "✅ Cell 13 done: 0 articles (deduped, body > 100 chars)\n",
+            "⚠️  No articles fetched. Check RSS_FEEDS in Cell 12 and errors above.\n"
           ]
         }
       ]
@@ -1020,49 +1059,49 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "r4liwTuxG14z",
-        "outputId": "d8ccfa6d-a9a6-4602-dc9d-c4eb51b7b82a"
+        "outputId": "2b4dd080-cf9a-4d2a-eafb-296e2b72f057"
       },
-      "execution_count": 19,
+      "execution_count": 18,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            " 2026-05-24 → 2026-05-31: 6 articles\n",
+            " 2026-05-24 → 2026-05-31: 16 articles\n",
             " 2026-05-31 → 2026-06-07: 8 articles\n",
-            " 2026-06-07 → 2026-06-14: 10 articles\n",
-            " 2026-06-14 → 2026-06-21: 4 articles\n",
-            " 2026-06-21 → 2026-06-28: 7 articles\n",
+            " 2026-06-07 → 2026-06-14: 11 articles\n",
+            " 2026-06-14 → 2026-06-21: 6 articles\n",
+            " 2026-06-21 → 2026-06-28: 6 articles\n",
             " 2026-06-28 → 2026-07-05: 11 articles\n",
-            " 2026-07-05 → 2026-07-12: 7 articles\n",
-            " 2026-07-12 → 2026-07-19: 9 articles\n",
-            " 2026-07-19 → 2026-07-26: 6 articles\n",
-            " 2026-07-26 → 2026-08-02: 8 articles\n",
-            " 2026-08-02 → 2026-08-09: 10 articles\n",
+            " 2026-07-05 → 2026-07-12: 6 articles\n",
+            " 2026-07-12 → 2026-07-19: 8 articles\n",
+            " 2026-07-19 → 2026-07-26: 24 articles\n",
+            " 2026-07-26 → 2026-08-02: 9 articles\n",
+            " 2026-08-02 → 2026-08-09: 9 articles\n",
             " 2026-08-09 → 2026-08-16: 7 articles\n",
             " 2026-08-16 → 2026-08-23: 10 articles\n",
-            " 2026-08-23 → 2026-08-30: 4 articles\n",
+            " 2026-08-23 → 2026-08-30: 5 articles\n",
             " 2026-08-30 → 2026-09-06: 8 articles\n",
-            " 2026-09-06 → 2026-09-13: 4 articles\n",
-            " 2026-09-13 → 2026-09-20: 2 articles\n",
-            " 2026-09-20 → 2026-09-27: 24 articles\n",
-            " 2026-09-27 → 2026-10-04: 19 articles\n",
+            " 2026-09-06 → 2026-09-13: 6 articles\n",
+            " 2026-09-13 → 2026-09-20: 62 articles\n",
+            " 2026-09-20 → 2026-09-27: 26 articles\n",
+            " 2026-09-27 → 2026-10-04: 18 articles\n",
             " 2026-10-04 → 2026-10-11: 34 articles\n",
-            " 2026-10-11 → 2026-10-18: 17 articles\n",
-            " 2026-10-18 → 2026-10-25: 10 articles\n",
+            " 2026-10-11 → 2026-10-18: 18 articles\n",
+            " 2026-10-18 → 2026-10-25: 11 articles\n",
             " 2026-10-25 → 2026-11-01: 15 articles\n",
-            " 2026-11-01 → 2026-11-08: 16 articles\n",
-            " 2026-11-08 → 2026-11-15: 25 articles\n",
+            " 2026-11-01 → 2026-11-08: 14 articles\n",
+            " 2026-11-08 → 2026-11-15: 23 articles\n",
             " 2026-11-15 → 2026-11-20: 100 articles Truncated (100)\n",
             "\n",
-            "✅ Fetching data done: +371 from Google News, total news_df = 396\n",
-            "   date range: 2026-05-24 07:00:00+00:00 → 2026-11-20 07:40:50+00:00\n",
-            "           published_at_utc                                                                                              title\n",
-            "0 2026-11-20 07:40:50+00:00                                                                What are the main events for today?\n",
-            "1 2026-11-20 07:00:37+00:00                                                UK October retail sales +0.7% vs +0.0% m/m expected\n",
-            "2 2026-11-20 04:39:38+00:00                     investingLive Asia-Pacific market news: Red Friday as Asia’s AI trade unravels\n",
-            "3 2026-11-20 02:14:13+00:00                    US envoys float NATO membership for Ukraine in exchange for Donbas, WSJ reports\n",
-            "4 2026-11-20 01:16:31+00:00  US approved nearly 900,000 Nvidia and AMD AI chips for China. Raises more questions than answers.\n"
+            "✅ Fetching data done: +458 from Google News, total news_df = 458\n",
+            "   date range: 2026-05-24 07:00:00+00:00 → 2026-11-20 06:43:51+00:00\n",
+            "           published_at_utc                                                                                          title\n",
+            "0 2026-05-26 07:00:00+00:00                          USD/JPY Update: Is the yen struggling to regain strength? - FOREX.com\n",
+            "1 2026-05-26 07:00:00+00:00               Stephen Jen Sees Yen Strengthening, Putting Carry Trades at Risk - Bloomberg.com\n",
+            "2 2026-05-29 07:00:00+00:00                             Trade of the week: short USD/JPY as downtrend resumes - www.ig.com\n",
+            "3 2026-05-26 07:00:00+00:00  USD/JPY: Dollar Climbs Above ¥159.00 as Japan Inflation Soars, New Metric Shows - TradingView\n",
+            "4 2026-05-24 07:00:00+00:00      Interest Rates Forecast: Treasury Yield Surge Drives USDJPY, EURUSD and GBPUSD - FXEmpire\n"
           ]
         }
       ]
@@ -1113,21 +1152,21 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "TaJKGjbaRfDw",
-        "outputId": "0cd690a0-2686-4aad-e475-97d9414f2f4c"
+        "outputId": "176ec07a-7184-4f48-bdfd-e7b0d7999aca"
       },
-      "execution_count": 20,
+      "execution_count": 19,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "  2026-11-01 → 2026-11-04: 11 articles\n",
+            "  2026-11-01 → 2026-11-04: 57 articles\n",
             "  2026-11-04 → 2026-11-07: 12 articles\n",
             "  2026-11-07 → 2026-11-08: 9 articles\n",
             "  2026-11-15 → 2026-11-18: 85 articles\n",
             "  2026-11-18 → 2026-11-20: 73 articles\n",
             "\n",
-            "✅ Refetching done: +185, total news_df = 497\n"
+            "✅ Refetching done: +231, total news_df = 587\n"
           ]
         }
       ]
@@ -1160,19 +1199,19 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "39Ks-LEmSWbx",
-        "outputId": "48c1a706-0f75-4a63-dde3-c13a6595c07c"
+        "outputId": "5231e7a7-05da-4688-cf21-c786e22c33e4"
       },
-      "execution_count": 21,
+      "execution_count": 20,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Total: 497\n",
-            "Unique URLs: 497\n",
-            "Unique titles (exact): 475\n",
-            "Unique title-prefixes: 456\n",
-            "Body length: min=267, median=476, max=4000\n"
+            "Total: 587\n",
+            "Unique URLs: 587\n",
+            "Unique titles (exact): 564\n",
+            "Unique title-prefixes: 538\n",
+            "Body length: min=252, median=463, max=826\n"
           ]
         }
       ]
@@ -1221,9 +1260,43 @@
     {
       "cell_type": "code",
       "source": [
+        "print(\"news_llm:\", type(news_llm).__name__)\n",
+        "print(\"gemini_llm:\", \"OK\" if \"gemini_llm\" in globals() else \"MISSING\")\n",
+        "print(\"NEWS_LLM_MODEL:\", NEWS_LLM_MODEL)\n",
+        "print(\"GEMINI_NEWS_MODEL:\", GEMINI_NEWS_MODEL if \"GEMINI_NEWS_MODEL\" in globals() else \"MISSING\")"
+      ],
+      "metadata": {
+        "id": "yZ1lB03N0r_z",
+        "outputId": "0a7b7f2b-5db2-4a06-ac80-48260c8259ba",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "news_llm: Groq\n",
+            "gemini_llm: OK\n",
+            "NEWS_LLM_MODEL: openai/gpt-oss-20b\n",
+            "GEMINI_NEWS_MODEL: gemini-3.5-flash-lite\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
         "# ============================================================\n",
-        "# NEWS SENTIMENT CLASSIFIER (Groq / gpt-oss-20b)\n",
+        "#  NEWS SENTIMENT CLASSIFIER (Groq primary, Gemini fallback)\n",
         "# Each article -> {\"sentiment\": float, \"impact\": ..., \"currency\": ...}\n",
+        "# Failures are cached as {\"__failed__\": True} so re-runs skip them.\n",
+        "# Cache saved every 50 articles (crash-safe).\n",
+        "# Parses strictly-but-permissively: accepts string numbers, remaps\n",
+        "# unknown currencies to USD (XAU/BTC/CNH/etc), logs every rejection.\n",
+        "# ============================================================\n",
         "\n",
         "import json, re, os, time\n",
         "\n",
@@ -1243,68 +1316,117 @@
         "    \"Output JSON only, no prose.\"\n",
         ")\n",
         "\n",
+        "VALID_CURRENCIES = {\"USD\", \"EUR\", \"GBP\", \"JPY\", \"AUD\", \"CAD\", \"CHF\", \"NZD\"}\n",
+        "\n",
         "def parse_news_json(text):\n",
-        "    \"\"\"Extract JSON, validate fields strictly. Returns dict or None.\"\"\"\n",
+        "    \"\"\"Extract JSON, validate fields permissively. Returns dict or None.\"\"\"\n",
         "    if not text:\n",
         "        return None\n",
         "    m = re.search(r\"\\{.*\\}\", text, re.S)\n",
         "    if not m:\n",
+        "        print(f\"  reject: no JSON in response: {text[:80]!r}\")\n",
         "        return None\n",
         "    try:\n",
         "        out = json.loads(m.group(0))\n",
-        "    except Exception:\n",
+        "    except Exception as e:\n",
+        "        print(f\"  reject: JSON parse error: {e} | {m.group(0)[:80]!r}\")\n",
         "        return None\n",
-        "    s   = out.get(\"sentiment\")\n",
+        "\n",
+        "    # sentiment: accept strings OR numbers\n",
+        "    s_raw = out.get(\"sentiment\")\n",
+        "    try:\n",
+        "        s = float(s_raw)\n",
+        "    except (TypeError, ValueError):\n",
+        "        print(f\"  reject: sentiment not numeric: {s_raw!r}\")\n",
+        "        return None\n",
+        "    if not (-1.0 <= s <= 1.0):\n",
+        "        print(f\"  reject: sentiment out of range: {s}\")\n",
+        "        return None\n",
+        "\n",
+        "    # impact: tolerant of casing\n",
         "    imp = str(out.get(\"impact\", \"\")).strip().upper()\n",
-        "    cur = str(out.get(\"currency\", \"\")).strip().upper()\n",
-        "    if not isinstance(s, (int, float)) or not (-1.0 <= float(s) <= 1.0):\n",
-        "        return None\n",
         "    if imp not in NEWS_IMPACT_MAP:\n",
+        "        print(f\"  reject: impact invalid: {imp!r}\")\n",
         "        return None\n",
-        "    if cur not in {\"USD\", \"EUR\", \"GBP\", \"JPY\", \"AUD\", \"CAD\", \"CHF\", \"NZD\"}:\n",
-        "        return None\n",
-        "    return {\"sentiment\": float(s), \"impact\": imp, \"currency\": cur}\n",
+        "\n",
+        "    # currency: remap unknown to USD\n",
+        "    cur = str(out.get(\"currency\", \"\")).strip().upper()\n",
+        "    if cur not in VALID_CURRENCIES:\n",
+        "        print(f\"  remap: currency {cur!r} -> USD\")\n",
+        "        cur = \"USD\"\n",
+        "\n",
+        "    return {\"sentiment\": s, \"impact\": imp, \"currency\": cur}\n",
+        "\n",
+        "def _call_llm(client, model, text):\n",
+        "    \"\"\"One LLM call, returns raw text or None.\"\"\"\n",
+        "    r = client.chat.completions.create(\n",
+        "        model=model,\n",
+        "        messages=[\n",
+        "            {\"role\": \"system\", \"content\": NEWS_SYSTEM},\n",
+        "            {\"role\": \"user\",   \"content\": text + \"\\n\\nRespond with JSON only.\"},\n",
+        "        ],\n",
+        "        temperature=0,\n",
+        "        response_format={\"type\": \"json_object\"},\n",
+        "        max_tokens=250,\n",
+        "    )\n",
+        "    return r.choices[0].message.content\n",
         "\n",
         "def classify_one(article):\n",
-        "    \"\"\"Call Groq. Retries once on rate limit. Returns dict or None.\"\"\"\n",
+        "    \"\"\"Try Groq, fall back to Gemini on rate limit. Returns dict or None.\"\"\"\n",
         "    text = f\"Title: {article['title']}\\n\\nBody: {article['body']}\"\n",
-        "    for attempt in range(2):\n",
-        "        try:\n",
-        "            r = news_llm.chat.completions.create(\n",
-        "                model=NEWS_LLM_MODEL,\n",
-        "                messages=[\n",
-        "                    {\"role\": \"system\", \"content\": NEWS_SYSTEM},\n",
-        "                    {\"role\": \"user\",   \"content\": text + \"\\n\\nRespond with JSON only\"},\n",
-        "                ],\n",
-        "                temperature=0,\n",
+        "    if len(text) > 6000:\n",
+        "      text = text[:6000] + \"\\n\\n[truncated]\"\n",
+        "    # Attempt 1: Groq\n",
+        "    try:\n",
+        "        raw = _call_llm(news_llm, NEWS_LLM_MODEL, text)\n",
+        "        return parse_news_json(raw)\n",
+        "    except Exception as e:\n",
+        "        err_name = type(e).__name__\n",
+        "        if \"RateLimit\" in err_name:\n",
+        "            pass\n",
+        "        elif \"BadRequest\" in err_name:\n",
+        "          print(f\" Groq 400 on {article['url'][:60]}: {e}\")\n",
+        "          return None\n",
+        "        else :\n",
+        "          print(f\" Groq failed on {articles['url'][:60]}:{err_name}\")\n",
         "\n",
-        "                max_tokens=500,\n",
-        "            )\n",
-        "            return parse_news_json(r.choices[0].message.content)\n",
-        "        except Exception as e:\n",
-        "            if \"RateLimit\" in type(e).__name__ and attempt == 0:\n",
-        "                time.sleep(5)\n",
-        "                continue\n",
-        "            print(f\"  LLM failed on {article['url'][:60]}: {type(e).__name__}\")\n",
-        "            return None\n",
+        "        # else fall through to Gemini\n",
         "\n",
-        "# ---------- cache ----------\n",
+        "    # Attempt 2: Gemini (only reached on Groq rate limit)\n",
+        "    try:\n",
+        "        raw = _call_llm(gemini_llm, GEMINI_NEWS_MODEL, text)\n",
+        "        return parse_news_json(raw)\n",
+        "    except Exception as e:\n",
+        "        print(f\"  Gemini failed on {article['url'][:60]}: {type(e).__name__}\")\n",
+        "        return None\n",
+        "\n",
+        "# ---------- load cache ----------\n",
         "cache = {}\n",
         "if os.path.exists(NEWS_CACHE_PATH):\n",
         "    try:\n",
         "        with open(NEWS_CACHE_PATH) as f:\n",
         "            cache = json.load(f)\n",
-        "        print(f\"Loaded {len(cache)} cached classifications\")\n",
+        "        n_ok = sum(1 for v in cache.values() if isinstance(v, dict) and not v.get(\"__failed__\"))\n",
+        "        n_bad = sum(1 for v in cache.values() if isinstance(v, dict) and v.get(\"__failed__\"))\n",
+        "        print(f\"Loaded {len(cache)} cache entries ({n_ok} ok, {n_bad} failed)\")\n",
         "    except Exception:\n",
         "        cache = {}\n",
         "\n",
-        "# ---------- main ----------\n",
+        "# ---------- main loop ----------\n",
         "results = []\n",
         "for i, art in enumerate(news_df.itertuples(index=False)):\n",
         "    key = art.url\n",
+        "\n",
+        "    # cache hit?\n",
         "    if key in cache:\n",
-        "        results.append(cache[key])\n",
+        "        entry = cache[key]\n",
+        "        if isinstance(entry, dict) and entry.get(\"__failed__\"):\n",
+        "            results.append(None)        # previously failed; skip\n",
+        "        else:\n",
+        "            results.append(entry)\n",
         "        continue\n",
+        "\n",
+        "    # cache miss: classify\n",
         "    out = classify_one({\"title\": art.title, \"url\": art.url, \"body\": art.body})\n",
         "    if out is not None:\n",
         "        out[\"url\"] = key\n",
@@ -1312,88 +1434,222 @@
         "        results.append(out)\n",
         "        cache[key] = out\n",
         "    else:\n",
+        "        cache[key] = {\"__failed__\": True}\n",
         "        results.append(None)\n",
+        "\n",
         "    if (i + 1) % 20 == 0:\n",
         "        print(f\"  classified {i+1}/{len(news_df)}\")\n",
-        "    time.sleep(2.5)   # <-- throttle: ~40 req/min, under Groq free-tier limit\n",
+        "\n",
+        "    time.sleep(2.5)\n",
+        "\n",
         "    if (i + 1) % 50 == 0:\n",
-        "      with open(NEWS_CACHE_PATH, \"w\") as f:\n",
-        "        json.dump(cache, f)\n",
-        "      print(f\" cache saved at {i + 1} / {len(news_df)}\")\n",
+        "        with open(NEWS_CACHE_PATH, \"w\") as f:\n",
+        "            json.dump(cache, f)\n",
+        "        print(f\"  💾 cache saved at {i+1}/{len(news_df)}\")\n",
+        "\n",
+        "# final save\n",
         "with open(NEWS_CACHE_PATH, \"w\") as f:\n",
         "    json.dump(cache, f)\n",
         "\n",
-        "news_scored = pd.DataFrame([r for r in results if r is not None])\n",
-        "news_scored[\"published_at_utc\"] = pd.to_datetime(news_scored[\"published_at_utc\"], utc=True)\n",
-        "\n",
-        "print(f\"\\n✅ Cell 14 done: {len(news_scored)}/{len(news_df)} articles classified\")\n",
+        "# ---------- build news_scored (excluding failed entries) ----------\n",
+        "news_scored = pd.DataFrame([\n",
+        "    r for r in results\n",
+        "    if r is not None and not (isinstance(r, dict) and r.get(\"__failed__\"))\n",
+        "])\n",
         "if len(news_scored) > 0:\n",
+        "    news_scored[\"published_at_utc\"] = pd.to_datetime(news_scored[\"published_at_utc\"], utc=True)\n",
+        "\n",
+        "n_total = len(news_df)\n",
+        "n_ok = len(news_scored)\n",
+        "n_fail = n_total - n_ok\n",
+        "print(f\"\\n✅ Cell 14 done: {n_ok}/{n_total} articles classified ({n_fail} failed)\")\n",
+        "if n_ok > 0:\n",
         "    print(news_scored[[\"published_at_utc\", \"sentiment\", \"impact\", \"currency\"]].head(5).to_string())"
       ],
       "metadata": {
+        "id": "7PHdTmVc0Xjp",
+        "outputId": "49cb3444-7d6a-44d4-dbee-5e2e54d07f63",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        },
-        "id": "Tug8QNdMdQmQ",
-        "outputId": "7a2f5344-55cb-4c62-9187-d8431ac6859b"
+        }
       },
-      "execution_count": null,
+      "execution_count": 26,
       "outputs": [
         {
-          "metadata": {
-            "tags": null
-          },
-          "name": "stdout",
           "output_type": "stream",
+          "name": "stdout",
           "text": [
-            "Loaded 178 cached classifications\n",
-            "  classified 60/497\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQVF1Wmo: RateLimitError\n",
-            "  classified 80/497\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxObHlYdXQ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxObzdFTC1: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiogFBVV95cUxQSnNaZUN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivwFBVV95cUxQRXVEb2o: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWlVMY3h: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxQQXBNVXN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMieEFVX3lxTE51NjhfenZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisAFBVV95cUxQY2FXbDV: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbDdqak5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMifEFVX3lxTE9hUnlVUGx: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMihAJBVV95cUxQcDhjZ0J: RateLimitError\n",
-            "  classified 100/497\n",
-            " cache saved at 100 / 497\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLVM2cm5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMijgFBVV95cUxNd2w0T2l: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxQeGcxdzd: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitgFBVV95cUxPal9feVY: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMisgFBVV95cUxPOE5oSXN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRlMxbVJ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMitAFBVV95cUxOZkllT2c: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMivgFBVV95cUxNYjNMUlB: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipwFBVV95cUxQaVhpVUx: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVMwVW1: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMioAFBVV95cUxQc2dJeTN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMirgFBVV95cUxQOFFsVkJ: RateLimitError\n",
-            "  classified 120/497\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipAFBVV95cUxNVjhtVGZ: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikgFBVV95cUxPcy02SE5: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMixgFBVV95cUxOcjh3VF8: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdEpIdkx: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMikwFBVV95cUxPRnBXQjN: RateLimitError\n",
-            "  LLM failed on https://news.google.com/rss/articles/CBMipgFBVV95cUxOVWthalV: RateLimitError\n"
+            "Loaded 348 cache entries (280 ok, 68 failed)\n",
+            "  classified 260/587\n",
+            "  classified 300/587\n",
+            "  💾 cache saved at 300/587\n",
+            "  Gemini failed on https://news.google.com/rss/articles/CBMimwFBVV95cUxNRUotMDV: RateLimitError\n",
+            "  Gemini failed on https://news.google.com/rss/articles/CBMizAFBVV95cUxPc2ZpcHp: RateLimitError\n",
+            "  classified 320/587\n",
+            "  Gemini failed on https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcGRKYk9: RateLimitError\n",
+            "  classified 340/587\n",
+            "  💾 cache saved at 350/587\n",
+            "  Gemini failed on https://news.google.com/rss/articles/CBMitwFBVV95cUxPcUFKSkF: RateLimitError\n",
+            "  classified 360/587\n",
+            "  classified 380/587\n",
+            " Groq 400 on https://news.google.com/rss/articles/CBMikgFBVV95cUxOb0NnRmR: Error code: 400 - {'error': {'message': \"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}\n",
+            "  classified 400/587\n",
+            "  💾 cache saved at 400/587\n",
+            "  classified 420/587\n",
+            "  classified 440/587\n",
+            "  💾 cache saved at 450/587\n",
+            "  classified 480/587\n",
+            "  classified 500/587\n",
+            "  💾 cache saved at 500/587\n",
+            " Groq 400 on https://news.google.com/rss/articles/CBMimwFBVV95cUxNT0RZYzF: Error code: 400 - {'error': {'message': \"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}\n",
+            "  classified 520/587\n",
+            "  classified 540/587\n",
+            "  💾 cache saved at 550/587\n",
+            "  classified 560/587\n",
+            "  Gemini failed on https://news.google.com/rss/articles/CBMimgFBVV95cUxQLUZNMDl: RateLimitError\n",
+            "  classified 580/587\n",
+            "\n",
+            "✅ Cell 14 done: 512/587 articles classified (75 failed)\n",
+            "           published_at_utc  sentiment  impact currency\n",
+            "0 2026-05-26 07:00:00+00:00        0.6  MEDIUM      USD\n",
+            "1 2026-05-26 07:00:00+00:00        1.0    HIGH      JPY\n",
+            "2 2026-05-29 07:00:00+00:00       -0.7    HIGH      USD\n",
+            "3 2026-05-24 07:00:00+00:00       -0.7  MEDIUM      AUD\n",
+            "4 2026-05-27 07:00:00+00:00        0.5     LOW      EUR\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Total classified:\", len(news_scored))\n",
+        "print(\"Sentiment distribution:\")\n",
+        "print(news_scored[\"sentiment\"].describe())\n",
+        "print(\"\\nBy currency:\")\n",
+        "print(news_scored.groupby(\"currency\")[\"sentiment\"].agg([\"count\", \"mean\", \"std\"]))\n",
+        "print(\"\\nBy impact:\")\n",
+        "print(news_scored[\"impact\"].value_counts())\n",
+        "print(\"\\nBy month:\")\n",
+        "news_scored[\"month\"] = news_scored[\"published_at_utc\"].dt.to_period(\"M\")\n",
+        "print(news_scored.groupby(\"month\").size())"
+      ],
+      "metadata": {
+        "id": "shnkvuX-92r1",
+        "outputId": "82854588-22f8-48bb-a663-093c47f7d7ed",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Total classified: 512\n",
+            "Sentiment distribution:\n",
+            "count    512.00000\n",
+            "mean      -0.06418\n",
+            "std        0.45243\n",
+            "min       -0.80000\n",
+            "25%       -0.60000\n",
+            "50%        0.00000\n",
+            "75%        0.20000\n",
+            "max        1.00000\n",
+            "Name: sentiment, dtype: float64\n",
+            "\n",
+            "By currency:\n",
+            "          count      mean       std\n",
+            "currency                           \n",
+            "AUD          79 -0.220886  0.454437\n",
+            "EUR         161 -0.170248  0.419470\n",
+            "GBP          86 -0.131977  0.422939\n",
+            "JPY          57 -0.005263  0.459200\n",
+            "USD         129  0.183333  0.405785\n",
+            "\n",
+            "By impact:\n",
+            "impact\n",
+            "MEDIUM    224\n",
+            "HIGH      149\n",
+            "LOW       139\n",
+            "Name: count, dtype: int64\n",
+            "\n",
+            "By month:\n",
+            "month\n",
+            "2026-05      8\n",
+            "2026-06     31\n",
+            "2026-07     32\n",
+            "2026-08     18\n",
+            "2026-09     82\n",
+            "2026-10     80\n",
+            "2026-11    261\n",
+            "Freq: M, dtype: int64\n"
           ]
         },
         {
-          "metadata": {
-            "tags": null
-          },
-          "name": "stderr",
           "output_type": "stream",
+          "name": "stderr",
           "text": [
+            "/tmp/ipykernel_1654/3494011380.py:9: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.\n",
+            "  news_scored[\"month\"] = news_scored[\"published_at_utc\"].dt.to_period(\"M\")\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"cache size:\", len(cache))\n",
+        "print(\"results list length:\", len(results))\n",
+        "print(\"non-None results:\", sum(1 for r in results if r is not None))\n",
+        "print(\"None results:\", sum(1 for r in results if r is None))\n",
+        "\n",
+        "# how many cache entries are valid dicts?\n",
+        "valid_cache = sum(1 for v in cache.values() if isinstance(v, dict) and \"sentiment\" in v)\n",
+        "print(\"valid cache entries:\", valid_cache)\n",
+        "\n",
+        "# sample some recent failures by looking at articles classified but not in news_scored\n",
+        "classified_urls = set(news_scored[\"url\"])\n",
+        "missing_from_scored = [art.url for art in news_df.itertuples(index=False) if art.url in cache and art.url not in classified_urls]\n",
+        "print(\"\\nIn cache but NOT in news_scored:\", len(missing_from_scored))\n",
+        "if missing_from_scored:\n",
+        "    print(\"sample missing URLs:\")\n",
+        "    for u in missing_from_scored[:5]:\n",
+        "        print(f\"  {u[:80]}\")\n",
+        "        print(f\"  cache entry: {cache[u]}\")"
+      ],
+      "metadata": {
+        "id": "mr0Nj6hLzYj6",
+        "outputId": "c0062f55-d8fa-43ef-ed91-1adf2f517776",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "cache size: 651\n",
+            "results list length: 587\n",
+            "non-None results: 512\n",
+            "None results: 75\n",
+            "valid cache entries: 576\n",
             "\n",
-            "KeyboardInterrupt\n",
-            "\n"
+            "In cache but NOT in news_scored: 75\n",
+            "sample missing URLs:\n",
+            "  https://news.google.com/rss/articles/CBMi1AFBVV95cUxPS0VETUh4dkpSWHNoN1BCalI5VVZ\n",
+            "  cache entry: {'__failed__': True}\n",
+            "  https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDdyVkxROC1IR05UNEUyWllvUzh\n",
+            "  cache entry: {'__failed__': True}\n",
+            "  https://news.google.com/rss/articles/CBMiR0FVX3lxTE5oQVZpa3BKb0ZwUG9QVzNqcDFhU3Z\n",
+            "  cache entry: {'__failed__': True}\n",
+            "  https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbloxNm03bVZUNFNtZ05sWGFxbDl\n",
+            "  cache entry: {'__failed__': True}\n",
+            "  https://news.google.com/rss/articles/CBMiwAFBVV95cUxPOEN3VzE2UEc3Mk1XeW9ESkJwc0t\n",
+            "  cache entry: {'__failed__': True}\n"
           ]
         }
       ]
@@ -1406,10 +1662,23 @@
         "print(\"News range:   \", news_scored[\"published_at_utc\"].min(), \"→\", news_scored[\"published_at_utc\"].max())"
       ],
       "metadata": {
-        "id": "MfA-2rd6zdiD"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MfA-2rd6zdiD",
+        "outputId": "2bfe553a-e243-45c4-cfe0-c56f8a5dc9eb"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Candles range: 2018-11-01 11:00:00 → 2026-11-19 13:00:00\n",
+            "News range:    2026-05-24 07:00:00+00:00 → 2026-11-16 15:37:00+00:00\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
@@ -1502,9 +1771,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "4dMxH1nR0lNC",
-        "outputId": "62482562-cf35-468e-c14c-8fb4beec8ddb"
+        "outputId": "3b57ffa1-a964-4d62-cfe0-41094ba8fdd0"
       },
-      "execution_count": 31,
+      "execution_count": 29,
       "outputs": [
         {
           "output_type": "stream",
@@ -1512,16 +1781,16 @@
           "text": [
             "Aligning news to df_all..........\n",
             "rows : 50000 rows\n",
-            " news_has_data = 1: 16 rows\n",
-            " news_has_data = 0: 49984 rows\n",
+            " news_has_data = 1: 279 rows\n",
+            " news_has_data = 0: 49721 rows\n",
             "\n",
             "Head of last 5 candles with news: \n",
             "       news_sentiment_1h  news_sentiment_4h  news_sentiment_24h  news_counts_1h  news_has_data\n",
-            "49986                0.3           0.450000        1.967033e-01               1              1\n",
-            "49987               -0.7           0.105556        9.578947e-02               1              1\n",
-            "49991               -0.8          -0.800000       -3.373494e-02               1              1\n",
-            "49994               -0.1          -0.638462        3.857143e-02               1              1\n",
-            "49999                0.3           0.300000       -2.485574e-17               1              1\n"
+            "49993          -0.725000          -0.452000           -0.224490               2              1\n",
+            "49994          -0.461538          -0.605714           -0.205236               2              1\n",
+            "49996           0.045455          -0.325490           -0.178351               5              1\n",
+            "49998          -0.050000          -0.004348           -0.168868               5              1\n",
+            "49999          -0.200000          -0.059375           -0.147664               3              1\n"
           ]
         }
       ]
